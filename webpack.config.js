@@ -1,11 +1,17 @@
 const path = require('path')
-module.exports ={
-    entry: path.resolve('src', 'index.js'),
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+module.exports = {
+    entry: path.resolve('src', 'index.jsx'),
     output: path.resolve('dist'),
     module:{
         rules: [{
             test: /\.jsx?$/,
             loader: 'babel-loader'
         }]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin( {
+            template: path.resolve('index.html')
+        })
+    ]
 }

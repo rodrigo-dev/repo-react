@@ -6,6 +6,9 @@
   "repository": "https://github.com/rodrigo-dev/repo-react.git",
   "author": "Rodrigo",
   "license": "MIT",
+  "scripts": {
+    "start": "webpack serve --mode development"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.3",
     "@babel/preset-env": "^7.12.1",
@@ -15,6 +18,9 @@
     "webpack": "^5.2.0",
     "webpack-cli": "^4.1.0",
     "webpack-dev-server": "^3.11.0"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
-  
 }
